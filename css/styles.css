@@ -1,0 +1,192 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.myLogo{
+    display: flex;
+    justify-content: flex-start;
+    height: 70px;
+    width: 70px;
+}
+.navbar{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #a1d9f7; 
+} 
+.navUnderBar{
+    display: block;
+    background-color: #a1d9f7; 
+    height: 7px;
+    margin-top: -4px;
+}
+
+.navText{
+    font-family:Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+    color: #313131
+    
+    
+}
+.navText:hover{
+    text-decoration: underline 3px;
+    color: #8F23D1;
+    
+}
+
+
+.intro{
+    padding: 100px;
+    background-color: #a1d9f7; 
+}
+.introTxt{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.picSize{
+    padding-left: 30px;
+    width: 55px;
+}
+
+.largeCards{
+    display: flex;
+    /* background-color: hotpink; */
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.cardText{
+    cursor: pointer;
+    padding-left: 20%;    
+    font-size: 30px;
+    font-weight: bold;
+    /* font-family: 'IBM Plex Serif', serif; */
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#designProj{
+    background-color: rgb(253, 203, 66);
+    
+}
+
+.allProj{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'projName'
+        'projLogo proDescr'    
+        'CSButton'
+    ; */
+}
+
+
+.projSect{
+    /* background-color: #b15eff; */
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.projLogo{
+    width: 35vh;
+    height: 30vh; 
+    margin-left: 100px;
+    box-shadow: 0px 2px 8px #000000;
+}
+
+.projInfo{
+    /* margin-left: 30px;
+    margin-right: 40px;
+    margin-top: -10px;
+    font-family: 'IBM Plex Serif', serif; */
+    margin: 30px 40px -10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.projName{
+    font-weight: bold;
+    font-size: large;
+}
+
+.projDescr{
+    font-weight: 400;
+    /* padding-right: 30px; */
+} 
+@media screen and (max-width: 800px) {
+    .projSect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    .projInfo{
+        padding-left: 50px;
+        
+    
+        
+    }
+}
+
+
+
+.CSButton{
+    justify-content: center;
+    align-items: center;
+    /* grid-area: CSButton; */
+    border-radius: 43px;
+    border: none;
+    background-color: rgb(0, 225, 255);
+    width: 170px;
+    height: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.CSButton:hover{
+    box-shadow: 0px 2px 4px #414141 ;
+    background-color: #9625ff;
+    color: white; 
+}
+
+
+#photography{
+    background-color: rgb(255, 116, 116);
+}
+#digitalArt{
+    background-color: #b15eff;
+}
+
+
+
+/* footer section: find way to fix */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: bisque;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.ftLink{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ftLink:hover{
+    text-decoration: underline 3px;
+    color: #8F23D1
+}
+
+/* insert breakpoints for navbar + footer */
+/* see if nav text can become hamburger menu at phone width */
+
