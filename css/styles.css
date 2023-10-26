@@ -124,18 +124,22 @@ body{
     font-weight: 400;
     /* padding-right: 30px; */
 } 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 576px) {
     .projSect{
         display: flex;
         flex-direction: column;
         justify-content: center;
       
     }
-    .projInfo{
-        padding-left: 50px;
-        
-    
-        
+    .projSect img{
+        margin: 0 auto;
+    }
+    .allProj{
+        text-align: center;
+    }
+
+    .projLogo{
+        margin-left: 0;
     }
 }
 
