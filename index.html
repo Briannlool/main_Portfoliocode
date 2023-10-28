@@ -5,37 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
 </head>
 
-
 <body>
     <!-- use the navbar in each page-->
+    <nav class="customNav navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"><img src="images/myLogo1.png" class="myLogo"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <div class="navbar">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link navText" href="aboutme.html">About Me <span class="d-none d-lg-inline">(current)</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navText" href="designProjects.html">Design Projects</a>
+            </li>  
+             <li class="nav-item">
+              <a class="nav-link navText" href="photography.html">Photography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navText" href="digitalArt.html">Digital Art</a>
+            </li>  
+           <li class="nav-item">
+              <a class="nav-link navText" href="https://docs.google.com/document/d/18jZevNrXLxXFbHoa_Rg7ozIaoV-OR0PvPXwjwZaFF6E/edit?usp=sharing" target="_blank">Resume</a>
+            </li>  
+          </ul>
+        </div>
+      </nav>
+  
+
+
+
+    <!-- <div class="navbar">
         <img src="images/myLogo1.png" class="myLogo">
-        <a href="aboutme.html" class="navText"> <h3>About</h3> </a> 
-        <a href="designProjects.html" class="navText"> <h3>Design Projects</h3> </a>
-        <a href="photography.html" class="navText"> <h3>Photography</h3> </a>
-        <a href="digitalArt.html" class="navText"> <h3>Digital Art</h3> </a>
-        <h3 class="navText" id="resume">Resume</h3> <!-- have this link to a pdf of resume-->
-    </div>
+        <a href="aboutme.html"> <h3 class="navText">About</h3> </a> 
+        <a href="designProjects.html"> <h3 class="navText">Design Projects</h3> </a>
+        <a href="photography.html"> <h3 class="navText">Photography</h3> </a>
+        <a href="digitalArt.html"> <h3 class="navText">Digital Art</h3> </a>
+        <a href="https://docs.google.com/document/d/18jZevNrXLxXFbHoa_Rg7ozIaoV-OR0PvPXwjwZaFF6E/edit?usp=sharing" target="_blank"><h3 class="navText">Resume</h3> </a>  
+    </div> -->
 
 <span class="navUnderBar"></span>
     <!-- use the navbar in each page-->
 
+    <!-- Bootstrap for Nav -->
+
 
 <div class="intro">
-    <p class="introTxt">Hello! My name is Brian, and I am a UX & UI Designer based in New York.</p> 
+    <p class="introTxt">Hello! My name is Brian, and I am a UX & UI Designer based in New York City.</p> 
 </div>
 
 <div class="largeCards" id="designProj">
     <p class="cardText">Design Projects</p>
-    <img src="images/designpic.png" class="desPic picSize">
+    <img src="images/designpic.png" class="picSize">
 </div>
 
 <!--  -->
@@ -47,7 +87,7 @@
         <div class="projInfo">
             <h4 class="projName">Hugs for Brady Site Redesign: </h4>
             <p class="projDescr">Hugs for Brady is a childhood cancer fighting organization. Their Brady Buggy Wagons is one of their donation products that makes them stand out. </p>
-            <button class="CSButton"> Read Full Case Study</button>
+            <button class="CSButton"> View Case Study</button>
         </div>
     </div>
 
@@ -57,7 +97,7 @@
         <div class="projInfo">
             <h4 class="projName">Department of Energy Makeover:</h4>
             <p class="projDescr">It isn’t a secret that government sites are heavily loaded with information, yet are outdated in both looks and navigation.</p>
-            <button class="CSButton"> Read Full Case Study</button>
+            <button class="CSButton"> View Case Study</button>
         </div>
     </div>
 
@@ -67,7 +107,7 @@
         <div class="projInfo">
              <h4 class="projName">'Healthy Project', Healthy Life</h4>
             <p class="projDescr">Health is increasingly becoming a bigger topic, especially among young adults who have dedicated a lot of their time and energy into their busy lifestyles and careers. </p>
-            <button class="CSButton"> Read Full Case Study</button>
+            <button class="CSButton">View Case Study</button>
         </div>
     </div>
 
@@ -77,13 +117,13 @@
 
 <div class="largeCards" id="photography">
     <p class="cardText">Photography</p>
-    <img src="images/photographypic.png" class="photoPic picSize">
+    <img src="images/photographypic.png" class="picSize">
 </div>
 
 
 <div class="largeCards" id="digitalArt">
     <p class="cardText">Digital Art</p>
-    <img src="images/digitalartpic.png" class="digPic picSize">
+    <img src="images/digitalartpic.png" class="picSize">
 </div>
 
 <!-- footer for every page -->
